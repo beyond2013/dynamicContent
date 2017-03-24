@@ -5,5 +5,4 @@ A small shiny app for annotating text files.
 3. User may select any text within a sentence and click the 'Add Markup' button to annotate the sentence. The Action Button triggers javascript function 'addMarkup()'. See www/textselection.js for details.
 4. The sentence is displayed after being marked up. 
 
-[figures/corpusAnnotation.png](Screenshot of the UI
-)
+![Screenshot of the UI](figures/corpusAnnotation.png)
