@@ -2,7 +2,7 @@ library(shiny)
 source("/home/imran/backup/backup/RWorkspace/RandomForest/R/MyUtils.R")
 ui <- fluidPage(
   tags$head(tags$script(src="textselection.js")),
-  titlePanel("Title of the App"),
+  titlePanel("Corpus Annotation Utility"),
   sidebarLayout(
     sidebarPanel(
       fileInput('fileInput', 'Select Corpus', accept = c('text', 'text','.txt')),
