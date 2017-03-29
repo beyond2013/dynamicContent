@@ -1,5 +1,5 @@
 library(shiny)
-source("/home/imran/backup/backup/RWorkspace/RandomForest/R/MyUtils.R")
+source("MyUtils.R")
 ui <- fluidPage(
   tags$head(tags$script(src="textselection.js")),
   titlePanel("Corpus Annotation Utility"),
