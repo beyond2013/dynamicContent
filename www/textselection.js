@@ -3,7 +3,7 @@ window.onload = function(){
 }
 
 function addMarkup(){
-  var textNode = document.getElementById("sentence").firstChild,
+  var sentence = document.getElementById("sentence").innerHTML,
   selection="";
   if(window.getSelection){
     selection = window.getSelection().toString();
@@ -15,7 +15,7 @@ function addMarkup(){
     return;
   }
   marked = "<mark>".concat(selection).concat("</mark>");
-  result = textNode.nodeValue.replace(selection, marked);
-  //alert(result);
-  document.getElementById("sentenceMarkedUp").innerHTML= result;
+  result = sentence.replace(selection, marked);
+  document.getElementById("sentence").innerHTML = result;
+  Shiny.onInputChange("textresult",result);
 }
